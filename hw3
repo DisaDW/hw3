@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity >=0.8.2 <0.9.0;
+
+contract HomeWork1{
+    uint public VoteCount = 0;
+
+    function vote() public {
+        VoteCount += 1;
+    }
+
+    function getVoteCount() public view returns (uint) {
+        return VoteCount;
+    }
+}
